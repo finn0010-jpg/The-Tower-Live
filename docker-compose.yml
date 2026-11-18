@@ -12,7 +12,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - "/home/echlipse04/nginx-server/The Tower Livestream/frontend:/usr/share/nginx/html:ro"
+      - "/home/echlipse04/nginx-server/The-Tower-Live/frontend:/usr/share/nginx/html:ro"
     depends_on:
       - nodejs
     networks:
